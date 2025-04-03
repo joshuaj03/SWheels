@@ -16,11 +16,14 @@ SWheels is an intelligent, voice-controlled wheelchair designed for individuals 
 ### Phase 2 (Planned Features)
 - **Autopilot Mode**: Allows the wheelchair to autonomously navigate from point A to point B.
 - **Path Learning**: The system learns and remembers frequently traveled paths.
+- **Advanced Obstacle Detection: Uses LiDAR or depth cameras for better navigation.
+- **Fall Detection: Detects accidental falls and alerts caregivers.
 
 ### Phase 3 (Optional Enhancements)
 - **Extensive Control for Blind Users: Integration of a touchscreen display for enhanced accessibility.
 - **Joystick Controls: Additional navigation options for users with different mobility needs.
-
+- **Outdoor Use: Adds GPS navigation for outdoor mobility.
+- **Emergency SOS: Sends an emergency alert to a designated person in critical situations.
 
 ## Technical Stack
 - **Hardware**:
