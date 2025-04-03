@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWheels Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Lobster&display=swap');
+        
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-family: 'Lobster', cursive;
+        }
+        .dashcam, .stats, .about {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            display: inline-block;
+            width: 40%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .dashcam:hover, .stats:hover, .about:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .stat-box {
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .about {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .dashcam, .stats, .about {
+                width: 90%;
+                display: block;
+                margin: 10px auto;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SWheels</h1>
+        </header>
+        <main>
+            <section class="dashcam">
+                <h2>DashCam Live Footage</h2>
+                <img id="liveVideo" src="http://raspberrypi:8080/?action=stream" alt="Live Camera Feed" style="width:100%; border-radius:10px;">
+            </section>
+            <section class="stats">
+                <div class="stat-box">
+                    <h2>Speed Monitoring</h2>
+                    <p id="speed">0 km/h</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Distance Covered</h2>
+                    <p id="distance">0 m</p>
+                </div>
+            </section>
+            <section class="about">
+                <h2>About SWheels</h2>
+                <p>"SWheels is an AI-powered smart wheelchair designed for users with mobility impairments. It features voice control, automatic speed adjustment on slopes, obstacle detection, and live monitoring through a dashcam. With advanced technology and user-friendly design, SWheels ensures a smooth and safe navigation experience."</p>
+            </section>
+        </main>
+    </div>
+    <script>
+        function startCamera() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    document.getElementById('liveVideo').srcObject = stream;
+                })
+                .catch(error => {
+                    console.error('Error accessing camera:', error);
+                });
+        }
+
+        let distance = 0;
+        let speed = 0;
+
+        function updateStats() {
+            speed = Math.random() * 5 + 1;
+            distance += speed * 0.1;
+            document.getElementById('speed').innerText = speed.toFixed(2) + ' km/h';
+            document.getElementById('distance').innerText = distance.toFixed(2) + ' m';
+        }
+
+        setInterval(updateStats, 1000);
+        startCamera();
+    </script>
+</body>
+</html>
