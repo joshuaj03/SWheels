@@ -76,6 +76,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Contact
 For any questions or collaborations, feel free to reach out:
-- GitHub: [your-username](https://github.com/joshuaj03)
+- GitHub: [joshuaj03](https://github.com/joshuaj03)
 - LinkedIn: [Joshua Johnson](https://www.linkedin.com/in/joshua-johnson-63b560253/)
 
