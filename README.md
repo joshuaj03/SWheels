@@ -19,7 +19,7 @@ SWheels is an intelligent, voice-controlled wheelchair designed for individuals 
 - **Advanced Obstacle Detection**: Uses LiDAR or depth cameras for better navigation.
 - **Fall Detection**: Detects accidental falls and alerts caregivers.
 
-### Phase 3 (Optional Enhancements)
+### Phase 3 (Future Enhancements)
 - **Extensive Control for Blind Users**: Integration of a touchscreen display for enhanced accessibility.
 - **Joystick Controls**: Additional navigation options for users with different mobility needs.
 - **Outdoor Use**: Adds GPS navigation for outdoor mobility.
