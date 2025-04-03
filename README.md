@@ -11,13 +11,16 @@ SWheels is an intelligent, voice-controlled wheelchair designed for individuals 
 - **Obstacle Detection and Avoidance**: Uses ultrasonic sensors for real-time obstacle avoidance.
 - **Fall Detection & Alert System**: Sends alerts in case of unexpected falls.
 - **Incline Detection**: Uses the MPU6050 sensor to measure the wheelchair's angle and adjust speed accordingly.
+- **Dash Cam Facility**: Records the wheelchair’s journey for security and review purposes.
 
 ### Phase 2 (Planned Features)
 - **Autopilot Mode**: Allows the wheelchair to autonomously navigate from point A to point B.
 - **Path Learning**: The system learns and remembers frequently traveled paths.
 
 ### Phase 3 (Optional Enhancements)
-- **Dash Cam Facility**: Records the wheelchair’s journey for security and review purposes.
+- **Extensive Control for Blind Users: Integration of a touchscreen display for enhanced accessibility.
+- **Joystick Controls: Additional navigation options for users with different mobility needs.
+
 
 ## Technical Stack
 - **Hardware**:
