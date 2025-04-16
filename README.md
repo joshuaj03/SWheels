@@ -87,7 +87,7 @@ For any questions or collaborations, feel free to reach out:
 - GitHub: [joshuaj03](https://github.com/joshuaj03)
 - LinkedIn: [Joshua Johnson](https://www.linkedin.com/in/joshua-johnson-63b560253/)
 
-## 📚 Citation
+## Citation
 
 If you use this project in your research or work, please cite it:
 
