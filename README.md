@@ -1,5 +1,7 @@
 # SWheels - Smart Autonomous Voice-Controlled Wheelchair
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15229054.svg)](https://doi.org/10.5281/zenodo.15229054)
+
 ## Overview
 SWheels is an intelligent, voice-controlled wheelchair designed for individuals with partial or complete paralysis. Our primary goal is to implement a robust autopilot mode, allowing the wheelchair to navigate independently from point A to point B. Additionally, SWheels supports multiple control mechanisms, including voice commands and a joystick, ensuring ease of use. It also features automatic speed adjustment for inclines and real-time obstacle detection for enhanced safety.
 
@@ -84,4 +86,19 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 For any questions or collaborations, feel free to reach out:
 - GitHub: [joshuaj03](https://github.com/joshuaj03)
 - LinkedIn: [Joshua Johnson](https://www.linkedin.com/in/joshua-johnson-63b560253/)
+
+## 📚 Citation
+
+If you use this project in your research or work, please cite it:
+
+```bibtex
+@misc{swheels2025,
+  title        = {SWHEELS: THE SMART WHEELCHAIR},
+  author       = {Joshua Johnson, Nandkishore Binraj, Nikhil Manoj, Sourav S Pai, and  Neetha K Natraj},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.15229054},
+  url          = {https://doi.org/10.5281/zenodo.15229054}
+}
+
 
